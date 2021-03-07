@@ -4,5 +4,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :nikc_name, presence: :ture 
+  validates :nick_name, presence: :ture 
 end

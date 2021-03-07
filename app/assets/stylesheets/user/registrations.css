@@ -1,0 +1,156 @@
+.contents-row {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0ca3d2;
+  position: relative;
+}
+
+.contents-row .container {
+  position: absolute;
+  top: 80px;
+  left: 360px;
+  height: 80%;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 11px 35px 2px #0000004a;
+          box-shadow: 0px 11px 35px 2px #0000004a;
+}
+
+.contents-row .container .login-flash-message {
+  text-align: center;
+  color: red;
+  background-color: white;
+}
+
+.contents-row .container .field {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.contents-row .container .field .example_name {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.contents-row .container .field .input_some {
+  width: 100%;
+  margin-top: 5px;
+  height: 30px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+  cursor: pointer;
+}
+
+.contents-row .container .field .must {
+  background: #18a0b1;
+  padding: 3px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 35px;
+  margin-left: 10px;
+}
+
+.contents-row .container .field .must_bigger {
+  background: #18a0b1;
+  padding: 3px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.contents-row .container .field .must_biggest {
+  background: #18a0b1;
+  padding: 3px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 115px;
+  margin-left: 3px;
+}
+
+.contents-row .container .upper-container {
+  height: 10%;
+  width: 100%;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents-row .container .upper-container .title {
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: #1716169c;
+}
+
+.contents-row .container .new_user {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.contents-row .container .actions {
+  width: 15%;
+  height: 150px;
+  margin: auto;
+}
+
+.contents-row .container .actions .btn {
+  width: 100%;
+  background: teal;
+  border: 1px solid white;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contents-row .container .sign-up {
+  width: 100%;
+  background-color: white;
+}
+
+.contents-row .container .sign-up .sign_up_text {
+  color: teal;
+  margin: 280px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+/*# sourceMappingURL=registrations.css.map */
