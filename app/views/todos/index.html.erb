@@ -1,5 +1,20 @@
 <%= render "shared/header" %>
 
-<div class="home_main">
+<h1 class="title1"><%= current_user.nick_name%>さんのやることリスト！</h1>
+<button class="create_button"><%= link_to 'やるコトを作成'%></button>
+ <div class="list"> 
+<div class="content1">状態</div>
+<div class="content">目標</div>
+<div class="content">内容</div>
+ </div> 
 
+<div class="todo-main">
+  <div class="graph">
+    <span class="states">doing</span>
+    <span class="limit">10:55</span>
+    <span class="tasks">洗濯物</span>
+    <span class="complete">チェック</span>
+    <span class="fix">修正</span>
+    <span class="delete">削除</span>
 </div>
+

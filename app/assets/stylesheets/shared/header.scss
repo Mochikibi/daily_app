@@ -3,18 +3,20 @@ $cBlack: black;
 $cMenuClose: $cBlack;
 $cMenuOpen: $cBlack;
 $cSubTitle: #535353;
+.top-page-header{
+    height: 15vh;
+    margin: 0;
+}
 
 #container{
     position: relative;
     background-color: teal;
-    height: 20vh;
     z-index: 2;
     transition: all 0.5s;
 }
 
-body{
-    margin: 0;
-}
+
+
 
 .header{
     background-color: teal;

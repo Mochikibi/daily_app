@@ -1,0 +1,111 @@
+.title1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.create_button {
+  height: 75px;
+  width: 225px;
+  font-size: 25px;
+  text-decoration: none;
+  background-color: teal;
+  margin-left: 620px;
+  border: 2px solid white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 11px 35px 2px whitesmoke;
+          box-shadow: 0px 11px 35px 2px whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list :first-child {
+  margin-left: 250px;
+  margin-top: 65px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list .content {
+  margin-top: 65px;
+  margin-left: 75px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.todo-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo-main .graph {
+  width: 66vw;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+.todo-main .graph .states {
+  height: 40%;
+  width: 90px;
+  text-align: center;
+  line-height: 230%;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #60c6ca;
+  color: white;
+  -webkit-box-shadow: 0px 1px 2px 0px black;
+          box-shadow: 0px 1px 2px 0px black;
+}
+
+.todo-main .graph .limit {
+  margin-left: 20px;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.todo-main .graph .tasks {
+  margin-left: 55px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.todo-main .graph .complete {
+  position: absolute;
+  left: 670px;
+}
+
+.todo-main .graph .fix {
+  position: absolute;
+  left: 800px;
+}
+
+.todo-main .graph .delete {
+  position: absolute;
+  left: 900px;
+}
+/*# sourceMappingURL=todo.css.map */
