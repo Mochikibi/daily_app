@@ -1,0 +1,130 @@
+.new-all{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #f5f5f5;
+
+
+  & .new-container{
+    position: absolute;
+    top:125px;
+    left:360px;
+    width:50%;
+    height: 70%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+   & .new-title{
+     text-align: center;
+     color: black;
+     font-size: 25px;
+     font-weight: bold;
+   }
+   
+   & .task-text{
+     margin-top: 30px;
+    color: cadetblue;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+   }
+   & .task-container{
+     width: 100%;
+    
+
+      & .text-area{
+        width: 500px;
+        padding: 10px 16px 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        resize: none;
+      }
+   }
+
+  & .time-title{
+    margin-top: 15px;
+    color: cadetblue;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+  }
+  & .limit_time-container{
+    width: 100%;
+
+    & #todo_limit_time_1i{
+      padding: 10px 29px 8px ;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: none;
+    
+    }
+    & #todo_limit_time_2i{
+      padding: 10px 29px 8px ;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: none;
+      
+    }
+    & #todo_limit_time_3i{
+      width: 100px;
+      padding: 10px 29px 8px ;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: none;
+    
+    }
+  }
+  & .states-title{
+    margin-top: 15px;
+    color: cadetblue;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+   }
+  & .states-container{
+    width: 100%;
+
+    & .state_select{
+      height: 30px;
+    width: 60%;
+    background-color: #f5f5f5;
+    padding-left: 20px;
+    }
+   }
+  & .send-container{
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+
+    & .send-btn{
+      width: 50%;
+      height: 50px;
+      background-color: cadetblue;
+      border: 2px solid white;
+      color: white;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  & .back-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  & .back-btn{
+    text-align: center;
+    width: 30%;
+    background: #aaa;
+    border: 1px solid #aaa;
+    color: #fff;
+    text-decoration: none;
+  }
+  }   
+ }
+}

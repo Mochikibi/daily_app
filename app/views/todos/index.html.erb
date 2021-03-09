@@ -1,20 +1,59 @@
 <%= render "shared/header" %>
 
-<h1 class="title1"><%= current_user.nick_name%>さんのやることリスト！</h1>
-<button class="create_button"><%= link_to 'やるコトを作成'%></button>
+<h1 class="title1"><%= current_user.nick_name%>さんのやることリスト</h1>
+<%= link_to  new_todo_path do %>
+<button class="create_button">やるコトを作成</button>
+<%end%>
+
  <div class="list"> 
+ 
 <div class="content1">状態</div>
 <div class="content">目標</div>
-<div class="content">内容</div>
+<div class="content2">内容</div>
  </div> 
+ 
 
-<div class="todo-main">
-  <div class="graph">
-    <span class="states">doing</span>
-    <span class="limit">10:55</span>
-    <span class="tasks">洗濯物</span>
-    <span class="complete">チェック</span>
-    <span class="fix">修正</span>
-    <span class="delete">削除</span>
-</div>
+<ul class="todo-main">
+<% if @todos.present? %>
+   <% @todos.each do |todo| %>
+  <li class="graph">
+    <span class="states"><%= todo.state.name %></span>
+    <span class="limit"><%= todo.limit_time %></span>
+    <span class="tasks"><%= todo.task %></span> 
+    <% if todo.state.name == "Done"%>
+   <button class="material-icons">
+     check_circle_outline
+   </button>
+    <%end%>
+    <%= link_to edit_todo_path(todo.id), class:"edit-btn" do%>
+     <button class="material-icons2" > 
+     edit
+     </button> 
+    <%end%>
+     <%= link_to todo_path(todo.id), method: :delete, class:"delete-btn" do%>
+      <button class="material-icons3">
+    delete_sweep
+    </button>
+    <%end%>
+ </li>
+  <%end%>
+  <%else%>
+   <li class="graph">
+    <span class="states">Todo</span>
+    <span class="limit">2021-3-10</span>
+    <span class="tasks">やるコトを追加しましょう！</span> 
+   <button class="material-icons">
+     check_circle_outline
+   </button>
+     <button class="material-icons2" > 
+     edit
+     </button> 
+      <button class="material-icons3">
+    delete_sweep
+    </button>
+ </li>
+  <%end%>
+
+</ul>
+
 

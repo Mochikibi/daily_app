@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.new-all {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.new-all .new-container {
+  position: absolute;
+  top: 125px;
+  left: 360px;
+  width: 50%;
+  height: 70%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-all .new-container .new-title {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.new-all .new-container .task-text {
+  margin-top: 30px;
+  color: cadetblue;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+
+.new-all .new-container .task-container {
+  width: 100%;
+}
+
+.new-all .new-container .task-container .text-area {
+  width: 500px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.new-all .new-container .time-title {
+  margin-top: 15px;
+  color: cadetblue;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+
+.new-all .new-container .limit_time-container {
+  width: 100%;
+}
+
+.new-all .new-container .limit_time-container #todo_limit_time_1i {
+  padding: 10px 29px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.new-all .new-container .limit_time-container #todo_limit_time_2i {
+  padding: 10px 29px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.new-all .new-container .limit_time-container #todo_limit_time_3i {
+  width: 100px;
+  padding: 10px 29px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.new-all .new-container .states-title {
+  margin-top: 15px;
+  color: cadetblue;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+
+.new-all .new-container .states-container {
+  width: 100%;
+}
+
+.new-all .new-container .states-container .state_select {
+  height: 30px;
+  width: 60%;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+}
+
+.new-all .new-container .send-container {
+  width: 100%;
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new-all .new-container .send-container .send-btn {
+  width: 50%;
+  height: 50px;
+  background-color: cadetblue;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.new-all .new-container .back-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new-all .new-container .back-container .back-btn {
+  text-align: center;
+  width: 30%;
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=todo.new.css.map */

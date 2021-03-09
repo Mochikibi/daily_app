@@ -3,7 +3,8 @@ class CreateTodos < ActiveRecord::Migration[6.0]
     create_table :todos do |t|
       t.string :task, null: false
       t.integer :state_id, null:false
-      t.time :limit_time
+      t.date :limit_time
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end

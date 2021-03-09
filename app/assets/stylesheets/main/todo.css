@@ -10,6 +10,7 @@
   font-size: 25px;
   text-decoration: none;
   background-color: teal;
+  color: white;
   margin-left: 620px;
   border: 2px solid white;
   border-radius: 15px;
@@ -29,10 +30,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 2px solid black;
+  width: 66vw;
+  margin-left: 240px;
 }
 
 .list :first-child {
-  margin-left: 250px;
   margin-top: 65px;
   font-weight: bold;
   font-size: 20px;
@@ -45,16 +48,14 @@ a {
   font-size: 20px;
 }
 
-.todo-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.list .content2 {
+  margin-top: 65px;
+  margin-left: 95px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.todo-main .graph {
+.graph {
   width: 66vw;
   height: 100px;
   display: -webkit-box;
@@ -63,17 +64,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 2px solid black;
   border-bottom: 2px solid black;
+  margin-left: 240px;
   position: relative;
 }
 
-.todo-main .graph .states {
+.graph .states {
   height: 40%;
   width: 90px;
   text-align: center;
   line-height: 230%;
-  border: 1px solid black;
+  border-top: 1px solid black;
   border-radius: 4px;
   background-color: #60c6ca;
   color: white;
@@ -81,31 +82,129 @@ a {
           box-shadow: 0px 1px 2px 0px black;
 }
 
-.todo-main .graph .limit {
+.graph .limit {
   margin-left: 20px;
   color: red;
   font-size: 20px;
   font-weight: bold;
 }
 
-.todo-main .graph .tasks {
-  margin-left: 55px;
+.graph .tasks {
+  margin-left: 15px;
   font-size: 20px;
   font-weight: bold;
 }
 
-.todo-main .graph .complete {
+.graph .edit-btn {
   position: absolute;
-  left: 670px;
+  top: 35px;
+  right: 90px;
 }
 
-.todo-main .graph .fix {
+.graph .fix {
   position: absolute;
-  left: 800px;
+  right: 110px;
 }
 
-.todo-main .graph .delete {
+.graph .delete-btn {
   position: absolute;
-  left: 900px;
+  top: 35px;
+  right: 0px;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  position: absolute;
+  right: 190px;
+  top: 35px;
+  color: cadetblue;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+.material-icons2 {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: cadetblue;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+.material-icons3 {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: cadetblue;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
 }
 /*# sourceMappingURL=todo.css.map */
