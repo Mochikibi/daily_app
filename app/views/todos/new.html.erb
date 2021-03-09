@@ -1,0 +1,25 @@
+
+<div class="new-all">
+  <div class="new-container">
+  <h2 class="new-title">やるコトを登録しよう！</h2>
+<%= form_with(model: @todo, local: true) do |f| %>
+      <div class="task-text">やるコト</div>
+      <div class="task-container">
+      <%= f.text_field :task, placeholder: "例)レポート作成", class:"text-area" %>
+    </div>
+    <div class="time-title">目標時間</div>
+    <div class="limit_time-container">
+      <%= f.date_select :limit_time, class:"time-table" %>
+    </div>
+     <div class="states-title">状態</div>
+    <div class="states-container">
+      <%= f.collection_select(:state_id, State.all, :id, :name,{},{class:"state_select"}) %>
+    </div>
+    <div class="send-container">
+      <%= f.submit "登録する", class:"send-btn" %>
+    </div>
+    <div class="back-container"><%= link_to '戻る', root_path, class:"back-btn"%></div>
+    
+    <% end %>
+  </div>
+</div>
