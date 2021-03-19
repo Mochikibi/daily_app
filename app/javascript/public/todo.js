@@ -1,82 +1,79 @@
-window.addEventListener('DOMContentLoaded', ()=>{
-const onClickAdd = () => {
-  //テキストボックスの値を取り出し、初期化する
-  const inputText = document.getElementById("add-text").value;
-  document.getElementById("add-text").value = "";
+window.addEventListener('DOMContentLoaded',()=>{
+  console.log("hello");
+})
+navigator.geolocation.getCurrentPosition(success, fail);
 
-  createIncompleteList(inputText);
-};
+function success(pos) {
+  ajaxRequest(pos.coords.latitude, pos.coords.longitude);
+}
 
-//未完了リストから指定の要素を削除
-const deleteFromIncompleteList = (target) => {
-  document.getElementById("incomplete-list").removeChild(target);
-};
+function fail(error) {
+  alert('位置情報の取得に失敗しました。エラーコード：' + error.code);
+}
 
-//未完了リストに追加する関数
-const createIncompleteList = (text) => {
-  //div生成
-  const div = document.createElement("div");
-  div.className = "list-row";
+function utcToJSTime(utcTime) {
+  return utcTime * 1000;
+}
 
-  //liタグ生成
-  const li = document.createElement("li");
-  li.innerText = text;
+function ajaxRequest(lat, long) {
+  const url = 'https://api.openweathermap.org/data/2.5/forecast';
+  const appId = '61c3f62371af4dc65601ff53d36c2aa4';
 
-  //　button(完了)タグ生成
-  const completeButton = document.createElement("button");
-  completeButton.innerText = "完了";
-  completeButton.addEventListener("click", () => {
-    deleteFromIncompleteList(completeButton.parentNode);
-    //完了リストに追加する要素
-    const addTarget = completeButton.parentNode;
+  $.ajax({
+      url: url,
+      data: {
+          appid: appId,
+          lat: lat,
+          lon: long,
+          units: 'metric',
+          lang: 'ja'
+      }
+  })
+  .done(function(data) {
+      
+      $('#place').text(data.city.name + ', ' + data.city.country);
 
-    //TODOの内容テキストを取得
-    const text = addTarget.firstElementChild.innerText;
+     
+      data.list.forEach(function(forecast, index) {
+          const dateTime = new Date(utcToJSTime(forecast.dt));
+          const month = dateTime.getMonth() + 1;
+          const date = dateTime.getDate();
+          const hours = dateTime.getHours();
+          const min = String(dateTime.getMinutes()).padStart(2, '0');
+          const temperature = Math.round(forecast.main.temp);
+          const description = forecast.weather[0].description;
+          const iconPath = `/assets/${forecast.weather[0].icon}.svg`;
 
-    //div以下を初期化
-    addTarget.textContent = null;
+          
+          if(index === 0) {
+              const currentWeather = `
+              <div class="icon"><img src="${iconPath}"></div>
+              <div class="info">
+                  <p>
+                      <span class="description">現在の天気：${description}</span>
+                      <span class="temp">${temperature}</span>°C
+                  </p>
+              </div>`;
+              $('#weather').html(currentWeather);
+          } else {
+              const tableRow = `
+              <tr>
+                  <td class="info">
+                      ${month}/${date} ${hours}:${min}
+                  </td>
+                  <td class="icon"><img src="${iconPath}"></td>
+                  <td><span class="description">${description}</span></td>
+                  <td><span class="temp">${temperature}°C</span></td>
+              </tr>`;
+              $('#forecast').append(tableRow);
+          }
+      });
+  })
+  .fail(function() {
+      console.log('$.ajax failed!');
+  })
+}
 
-    //liタグを生成
-    const li = document.createElement("li");
-    li.innerText = text;
-
-    const backButton = document.createElement("button");
-    backButton.innerText = "戻す";
-    backButton.addEventListener("click", () => {
-      //押された戻すボタンの親タグを完了リストから削除
-      const deleteTarget = backButton.parentNode;
-      document.getElementById("complete-list").removeChild(deleteTarget);
-      //テキスト取得
-      const text = backButton.parentNode.firstElementChild.innerText;
-      createIncompleteList(text);
-    });
-
-    // divタグの子要素に各要素を設定
-    addTarget.appendChild(li);
-    addTarget.appendChild(backButton);
-
-    //完了リストに追加
-    document.getElementById("complete-list").appendChild(addTarget);
-  });
-
-  //　button(削除)タグ生成
-  const deleteButton = document.createElement("button");
-  deleteButton.innerText = "削除";
-  deleteButton.addEventListener("click", () => {
-    //押された削除ボタンの親タグdivを未完了リストから削除
-    deleteFromIncompleteList(deleteButton.parentNode);
-  });
-
-  // divタグの子要素に各要素を設定
-  div.appendChild(li);
-  div.appendChild(completeButton);
-  div.appendChild(deleteButton);
-
-  //未完了のリストに追加
-  document.getElementById("incomplete-list").appendChild(div);
-};
-
-document
-  .getElementById("add-button")
-  .addEventListener("click", () => onClickAdd());
+window.addEventListener('DOMContentLoaded',()=>{
+  console.log("hello");
 })

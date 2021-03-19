@@ -1,0 +1,24 @@
+<div class="new-all">
+  <div class="new-container">
+  <h2 class="new-title">予定の編集</h2>
+<%= form_with(model: @event, local: true) do |f| %>
+<%= render 'shared/error_messages', model: f.object %>
+      <div class="task-text">予定</div>
+      <div class="task-container">
+      <%= f.text_field :title, placeholder: "例)レポート作成", class:"text-area" %>
+    </div>
+    <div class="time-title">日時</div>
+    <div class="limit_time-container">
+      <%= f.datetime_select :start_time, class:"time-table" %>
+    </div>
+      <div class="task-text">詳細メモ</div>
+      <div class="task-container">
+      <%= f.text_field :content, placeholder: "例）新宿駅集合", class:"text-area" %>
+    <div class="send-container">
+      <%= f.submit "登録する", class:"send-btn" %>
+    </div>
+    <div class="back-container"><%= link_to '戻る', events_path, class:"back-btn"%></div>
+    
+    <% end %>
+  </div>
+</div>

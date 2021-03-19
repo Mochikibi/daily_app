@@ -1,0 +1,21 @@
+
+ <%= link_to changed_path(todo.id),remote:true,class:"states" do %>
+ <span class=""><%= todo.state.name %></span>
+ <%end%>
+    <span class="limit"><%= todo.limit_time %></span>
+    <span class="tasks"><%= todo.task %></span> 
+    <% if todo.state.name == "Done"%>
+   <button class="material-icons">
+     check_circle_outline
+   </button>
+    <%end%>
+    <%= link_to edit_todo_path(todo.id), class:"todo-edit-btn" do%>
+     <button class="material-icons2" > 
+     edit
+     </button> 
+    <%end%>
+     <%= link_to todo_path(todo.id), method: :delete, class:"delete-btn" do%>
+      <button class="material-icons3">
+    delete_sweep
+    </button>
+    <%end%>

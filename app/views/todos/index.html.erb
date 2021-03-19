@@ -1,7 +1,7 @@
 <%= render "shared/header" %>
-
+<div class="all-container">
 <h1 class="title1"><%= current_user.nick_name%>さんのやることリスト</h1>
-<%= link_to  new_todo_path do %>
+<%= link_to new_todo_path do %>
 <button class="create_button">やるコトを作成</button>
 <%end%>
 
@@ -16,25 +16,9 @@
 <ul class="todo-main">
 <% if @todos.present? %>
    <% @todos.each do |todo| %>
-  <li class="graph">
-    <span class="states"><%= todo.state.name %></span>
-    <span class="limit"><%= todo.limit_time %></span>
-    <span class="tasks"><%= todo.task %></span> 
-    <% if todo.state.name == "Done"%>
-   <button class="material-icons">
-     check_circle_outline
-   </button>
-    <%end%>
-    <%= link_to edit_todo_path(todo.id), class:"edit-btn" do%>
-     <button class="material-icons2" > 
-     edit
-     </button> 
-    <%end%>
-     <%= link_to todo_path(todo.id), method: :delete, class:"delete-btn" do%>
-      <button class="material-icons3">
-    delete_sweep
-    </button>
-    <%end%>
+  <li class="graph" id=<%=todo.id%>>
+  <%= render partial: "shared/todo", locals:{todo: todo}%>
+    <%# <span class="states"><%= todo.state.name %>
  </li>
   <%end%>
   <%else%>
@@ -42,7 +26,7 @@
     <span class="states">Todo</span>
     <span class="limit">2021-3-10</span>
     <span class="tasks">やるコトを追加しましょう！</span> 
-   <button class="material-icons">
+   <%# <button class="material-icons">
      check_circle_outline
    </button>
      <button class="material-icons2" > 
@@ -50,10 +34,11 @@
      </button> 
       <button class="material-icons3">
     delete_sweep
-    </button>
+    </button> %>
  </li>
   <%end%>
-
 </ul>
+</div>
+
 
 

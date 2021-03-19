@@ -1,0 +1,11 @@
+<%= render "shared/header2" %>
+<%= month_calendar events: @events do |date, events| %>
+  <%= date.day %>
+
+  <% events.each do |event| %>
+  
+    <div class="information">
+      <%=link_to event.title, event_path(event.id),class:"event-show" %>
+    </div>
+  <% end %>
+<% end %>

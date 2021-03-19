@@ -3,6 +3,7 @@
   <div class="new-container">
   <h2 class="new-title">やるコトを登録しよう！</h2>
 <%= form_with(model: @todo, local: true) do |f| %>
+<%= render 'shared/error_messages', model: f.object %>
       <div class="task-text">やるコト</div>
       <div class="task-container">
       <%= f.text_field :task, placeholder: "例)レポート作成", class:"text-area" %>

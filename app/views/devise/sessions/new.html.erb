@@ -9,7 +9,7 @@
     <%= flash[:alert] %>
   </div>
 <%= form_with model: @user, url: user_session_path, class: 'new_user', local: true do |f| %>
-<%= devise_error_messages! %>
+ <%= devise_error_messages! %> 
   <div class="field">
     <%= f.label :email, class:'example_name' %>
     <%= f.email_field :email, class:'input_some',autofocus: true, autocomplete: "email" %>

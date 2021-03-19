@@ -1,0 +1,124 @@
+.simple-calendar table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid teal;
+  border-collapse: collapse;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+  width: 80%;
+}
+
+.simple-calendar tr {
+  border-collapse: collapse;
+}
+
+.simple-calendar th {
+  padding: 6px;
+  border-bottom: 2px solid teal;
+  border-collapse: collapse;
+  border-left: 1px solid teal;
+  border-right: 1px solid teal;
+  border-top: 0px none #333333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+
+.simple-calendar td {
+  padding: 6px;
+  vertical-align: top;
+  width: 14%;
+  border: 1px solid #ddd;
+  border-top-color: #dddddd;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: #dddddd;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #dddddd;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+/* line 48, /Users/sasakimasaya/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/simple_calendar-2.4.1/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .day {
+  height: 100px;
+}
+
+/* line 60, /Users/sasakimasaya/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/simple_calendar-2.4.1/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .today {
+  background: #FFFFC0;
+}
+
+/* line 69, /Users/sasakimasaya/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/simple_calendar-2.4.1/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .prev-month {
+  background: #DDD;
+}
+
+/* line 72, /Users/sasakimasaya/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/simple_calendar-2.4.1/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .next-month {
+  background: #DDD;
+}
+
+.calendar-heading {
+  height: 9vh;
+  width: 70vw;
+  position: relative;
+}
+
+.calendar-heading .new-event {
+  position: absolute;
+  left: 100px;
+  top: 25px;
+  border: 1px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.calendar-heading .calendar-title {
+  position: absolute;
+  left: 500px;
+  top: 10px;
+  font-size: 40px;
+  color: #1e6e92;
+  font-family: 'Iowan Old Style',cursive;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.calendar-heading .previous-month {
+  position: absolute;
+  left: 400px;
+  top: 40px;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.calendar-heading .next-month {
+  position: absolute;
+  left: 700px;
+  top: 40px;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.wday-0 {
+  color: red;
+}
+
+.wday-6 {
+  color: blue;
+}
+/*# sourceMappingURL=calender.css.map */

@@ -1,0 +1,29 @@
+<div class="new-diary-row">
+  <div class="container">
+    <div class="upper-container">
+    <h2 class="new-diary-title2">日記の編集</h2>
+    </div>
+<%= form_with model: @diary,  class: 'new_diary', local: true do |f| %>
+    <div class="click-upload">
+        <p>
+          クリックして画像をアップロード
+        </p>
+        <%= f.file_field :image, id:"diary-image" %>
+      </div>
+    <div class="field">
+    <div class="example_name">日付</div>
+    <%= f.date_field :day, class:'input_day' %>
+  </div>
+
+  <div class="field">
+      <div class="example_name">内容</div>
+    <%= f.text_area :text, class:'input_content', maxlength:"400",placeholder:"最大400文字",autofocus:true %>
+  </div>
+
+  
+
+  <div class="actions">
+    <%= f.submit "作成", class:'diary-submit-btn' %>
+  </div>
+  <%= link_to '戻る', diaries_path, class:"back-diary-text" %>
+<% end %>

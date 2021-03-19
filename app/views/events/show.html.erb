@@ -1,0 +1,19 @@
+<div class="diary-global-container">
+<%= link_to edit_event_path(@event.id) do %>
+  <button class="diary-btn">予定を編集する</button>
+<%end%>
+<%= link_to events_path do%>
+<button class="diary-back-btn">戻る</button>
+<%end%>
+<%= link_to event_path(@event.id), method: :delete do %>
+  <button class="diary-destroy-btn">予定を削除する</button>
+<%end%>
+
+  <ul class="event-container">
+   <li class="event-graph">
+    <div class="event-place"><%= @event.title %></div>
+    <div class="time-place">予定日時  <%=@event.start_time.strftime("%Y-%m-%d %H:%M")%></div>
+    <div class="content-place"><%= @event.content%></div>
+  </li>
+  </ul>
+</div>
