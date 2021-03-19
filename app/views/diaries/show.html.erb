@@ -1,0 +1,25 @@
+<%= render "shared/header2" %>
+
+<div class="diary-global-container">
+<%= link_to edit_diary_path(@diary.id) do %>
+  <button class="diary-btn">日記を編集する</button>
+<%end%>
+<%= link_to diaries_path do%>
+<button class="diary-back-btn">戻る</button>
+<%end%>
+<%= link_to diary_path(@diary.id), method: :delete do %>
+  <button class="diary-destroy-btn">日記を削除する</button>
+<%end%>
+
+  <ul class="diary-container">
+   <li class="diary-graph">
+    <div class="date-place"><%= @diary.day %></div>
+    <%if @diary.image.present? %>
+    <div class="image-place"><%= image_tag @diary.image,class:"diaries-image"%></div>
+    <%end%>
+    <div class="text-place"><%= @diary.text%></div>
+  </li>
+  </ul>
+  
+  
+</div>

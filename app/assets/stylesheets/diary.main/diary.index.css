@@ -1,0 +1,115 @@
+.diary-global-container {
+  width: 100vw;
+  background-image: url(/assets/b9ed36cb8bcc33cb87e4b69eb1b2b42e_t.jpeg);
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.diary-global-container .diary-btn {
+  background-color: orange;
+  color: white;
+  font-size: 17px;
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+  border: 4px double white;
+  border-radius: 4px;
+  margin-top: 25px;
+  margin-left: 75px;
+  font-family: 'klee',sans-serif;
+}
+
+.diary-global-container .diary-back-btn {
+  display: inline-block;
+  background-color: #868686;
+  color: white;
+  font-size: 17px;
+  height: 75px;
+  cursor: pointer;
+  border: 4px double white;
+  border-radius: 4px;
+  font-family: 'klee',sans-serif;
+}
+
+.diary-global-container .diary-destroy-btn {
+  position: absolute;
+  background-color: #868686;
+  color: white;
+  font-size: 17px;
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+  border: 4px double white;
+  border-radius: 4px;
+  font-family: 'klee',sans-serif;
+  left: 100px;
+  top: 230px;
+}
+
+.diary-global-container .diary-container {
+  width: 50%;
+  height: 100%;
+  background-color: whitesmoke;
+  margin: auto;
+  margin-top: -90px;
+}
+
+.diary-global-container .diary-container .no-diary {
+  font-size: 25px;
+  padding-top: 85px;
+  padding-left: 220px;
+  font-family: 'klee',sans-serif;
+}
+
+.diary-global-container .diary-container .no-diary2 {
+  font-size: 25px;
+  padding-left: 195px;
+  font-weight: bold;
+  font-family: 'klee',sans-serif;
+}
+
+.diary-global-container .diary-container .date-place {
+  width: 100%;
+  height: 5%;
+  font-size: 35px;
+  font-family: 'Snell Roundhand',sans-serif;
+  text-align: center;
+  background-color: #ded4c0;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+}
+
+.diary-global-container .diary-container .diary-graph {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.diary-global-container .diary-container .image-place {
+  width: 100%;
+  height: 55%;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.diary-global-container .diary-container .image-place .diaries-image {
+  height: 55vh;
+  width: 50vw;
+  cursor: pointer;
+}
+
+.diary-global-container .diary-container .text-place {
+  width: 100%;
+  height: 40%;
+  font-size: 18px;
+  background-color: #f3f3f3;
+  border: 2px solid black;
+  cursor: pointer;
+  color: black;
+  overflow: hidden;
+}
+/*# sourceMappingURL=diary.index.css.map */

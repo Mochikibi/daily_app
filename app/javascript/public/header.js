@@ -1,5 +1,6 @@
 
 window.addEventListener('DOMContentLoaded', ()=>{
+    console.log("hello");
 class MobileMenu {
   constructor() {
       this.DOM = {};

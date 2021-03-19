@@ -1,4 +1,5 @@
 class TodosController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy,:index,:show]
   def index
     @todos = Todo.where(user_id: current_user.id).order("limit_time")
   end
@@ -36,9 +37,14 @@ class TodosController < ApplicationController
   end
  end
 
+ 
+
+
   private
   def todo_params
     params.require(:todo).permit(:task, :state_id, :limit_time).merge(user_id: current_user.id)
   end
+
+  
 end
 

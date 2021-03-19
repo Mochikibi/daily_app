@@ -1,0 +1,52 @@
+.event-container{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+  margin-top: -90px;
+  
+  .event-graph{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+  }
+
+  & .event-place{
+    width: 100%;
+    height: 7%;
+    font-size: 35px;
+    font-family: 'Snell Roundhand',sans-serif;
+    text-align: center;
+    background-color: teal;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+  }
+  & .time-place{
+    width: 100%;
+    height: 7%;
+    font-size: 35px;
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    text-align: center;
+    background-color: teal;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-top: 2px;
+  }
+  & .content-place{
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+    background-color:#f3f3f3;
+    border: 2px solid black;
+    cursor: pointer;
+    color: black;
+    overflow: hidden;
+    margin-top: 2px;
+  }
+ 
+}
