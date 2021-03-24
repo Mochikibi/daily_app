@@ -84,7 +84,7 @@ a {
   border-top: 1px solid black;
   border-radius: 4px;
   background-color: #c1e4ff;
-  color: white;
+  color: black;
   -webkit-box-shadow: 0px 1px 2px 0px black;
           box-shadow: 0px 1px 2px 0px black;
   cursor: pointer;
@@ -141,7 +141,7 @@ a {
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 
-.material-icons {
+.first-material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;

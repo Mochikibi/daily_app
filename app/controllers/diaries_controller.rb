@@ -45,7 +45,7 @@ class DiariesController < ApplicationController
 
  def search
   @diaries = Diary.search(params[:day])
-  # binding.pry
+
 end
 
 

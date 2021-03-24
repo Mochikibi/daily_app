@@ -9,6 +9,8 @@ require("channels");
 require('public/header')
 require('public/todo')
 require('public/weather')
+require('public/root')
+
 
 //= require jquery 
 //= require jquery_ujs 

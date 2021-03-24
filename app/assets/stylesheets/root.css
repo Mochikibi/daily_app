@@ -1,4 +1,197 @@
-.title-name {
-  color: green;
+@charset "UTF-8";
+.global-container {
+  background-color: #e7fbfb;
+}
+
+body {
+  margin: 0;
+}
+
+.root-header {
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+}
+
+.root-header .title-name {
+  position: absolute;
+  font-family: 'Zapfino',sans-serif;
+  font-weight: bolder;
+  top: 1px;
+  left: 40px;
+}
+
+.root-header .material-icons {
+  position: relative;
+  left: 1px;
+  margin-right: 10px;
+  font-size: 40px;
+  top: 2px;
+  color: teal;
+}
+
+.root-header .new-user {
+  position: absolute;
+  right: 350px;
+  text-decoration: none;
+  color: #868585;
+  top: 10px;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+.root-header .new-user .material-icons-new {
+  position: absolute;
+  right: 75px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.root-header .log-in {
+  position: absolute;
+  right: 100px;
+  text-decoration: none;
+  color: #868585;
+  top: 10px;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+.root-header .log-in .material-icons-log {
+  position: absolute;
+  right: 160px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.function .todo-explain {
+  opacity: 0;
+}
+
+.function .diary-explain {
+  opacity: 0;
+}
+
+.function .calender-explain {
+  opacity: 0;
+}
+
+.function .weather-explain {
+  opacity: 0;
+}
+
+.function .explains {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+
+.function .todo-text {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  color: lightcoral;
+  padding-left: 100px;
+}
+
+.function .todo-img {
+  margin-left: 300px;
+  border: lightcoral 4px double;
+  border-radius: 4px;
+}
+
+.function .add-text {
+  border: 2px solid black;
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'klee',sans-serif;
+  background-color: white;
+  color: #505d86;
+  width: 90%;
+}
+
+.diary-footer {
+  background-color: white;
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.diary-footer .material-icons {
+  font-size: 80px;
+  color: teal;
+}
+
+.diary-footer .title-name {
+  font-family: 'Zapfino',sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.inview {
+  -webkit-animation: todo 1.4s;
+          animation: todo 1.4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  background-color: white;
+}
+
+@-webkit-keyframes todo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-64px);
+            transform: translateY(-64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes todo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-64px);
+            transform: translateY(-64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 /*# sourceMappingURL=root.css.map */

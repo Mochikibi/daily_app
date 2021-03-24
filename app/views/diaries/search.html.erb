@@ -11,6 +11,7 @@
   <%= f.submit "検索", class: "search-btn" %>
 <% end %>
    <% @diaries.each do |diaries|%>
+   <%if diaries.user.id === current_user.id%>
    <li class="diary-graph">
      <%= link_to diary_path(diaries.id), class:"diary-show-link" do %>
     <div class="date-place"><%= diaries.day %></div>
@@ -20,6 +21,7 @@
     <div class="text-place"><%= diaries.text%></div>
     <%end%>
   </li>
+  <%end%>
   <%end%>
   </ul>
   

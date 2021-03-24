@@ -62,3 +62,4 @@ gem 'simple_calendar', '~> 2.0'
 gem 'rails-i18n'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 5.0.0.beta1'
+gem "aws-sdk-s3", require: false

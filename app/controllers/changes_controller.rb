@@ -1,6 +1,6 @@
 class ChangesController < ApplicationController
+ 
   def changed
-
     @todo = Todo.find(params[:id])
     todo = @todo.state_id
 

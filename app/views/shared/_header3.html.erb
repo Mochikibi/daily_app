@@ -1,0 +1,38 @@
+<header class="top-page-header3">
+    <div id="global-container">
+        <div id="container">
+            <div  class="mobile-menu__cover"></div>
+            <header class="header">
+            <div class="app-title">Your Daiary</div>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"log-out"%>
+             <div class="user-name">ようこそ<%= current_user.nick_name%>さん！</div>
+                <button class="mobile-menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+        </div>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                    <%= link_to "Todoリスト", todos_path, class:"main-title" %> 
+                         <%= link_to "やるコトを整理しましょう", todos_path, class:"sub-title" %> 
+                </li>
+                <li class="mobile-menu__item">
+                    <%= link_to "日記", diaries_path, class:"main-title" %>
+                      <%= link_to"日記をつけましょう", diaries_path, class:"sub-title" %>
+                </li>
+                <li class="mobile-menu__item">
+                   <li class="mobile-menu__item">
+                    <%= link_to "カレンダー",events_path, class:"main-title" %>
+                        <%= link_to "予定を整理しましょう", events_path, class:"sub-title"%>
+                </li>
+                <li class="mobile-menu__item">
+                    <%= link_to "天気予報",weathers_index_path, class:"main-title" %>
+                        <%= link_to "位置情報から天気がわかります", weathers_index_path, class:"sub-title"%>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

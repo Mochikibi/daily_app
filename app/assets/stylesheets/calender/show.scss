@@ -1,3 +1,50 @@
+.event-global-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  
+  & .diary-btn{
+    background-color: orange;
+    color: white;
+    font-size: 17px;
+    height: 75px;
+    width: 150px;
+    cursor: pointer;
+    border: 4px double white;
+    border-radius: 4px;
+    margin-top: 25px;
+    margin-left: 75px;
+    font-family: 'klee',sans-serif;
+    
+  }
+  & .diary-back-btn{
+    display: inline-block;
+    background-color: #868686;
+    color: white;
+    font-size: 17px;
+    height: 75px;
+    cursor: pointer;
+    border: 4px double white;
+    border-radius: 4px;
+    font-family: 'klee',sans-serif;
+  }
+
+  & .diary-destroy-btn{
+    position: absolute;
+    background-color: #868686;
+    color: white;
+    font-size: 17px;
+    height: 75px;
+    width: 150px;
+    cursor: pointer;
+    border: 4px double white;
+    border-radius: 4px;
+    font-family: 'klee',sans-serif;
+    left: 100px;
+    top:230px;
+  }
+}
+
 .event-container{
   width: 50%;
   height: 100%;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="root.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 7000,
+            });
+        });
+</script>
+
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="global-container">
+  <header class="root-header">
+    <span class="material-icons">
+      auto_stories</span>
+    <span class="title-name">
+      Your Diary</span>
+    <%= link_to new_user_registration_path,class:"new-user" do%>
+    <span class="material-icons-new">
+      person_add_alt_1
+      </span>新規登録<%end%>
+    <%= link_to new_user_session_path , class:"log-in" do%>
+   <span class="material-icons-log">
+      account_circle
+      </span>ログインはこちらから</span><%end%>
+   </header>
+   <div class="slider">
+    <img src="/assets/スクリーンショット 2021-03-23 16.53.52.png" width="300" height="750" alt="">
+    <img src="/assets/スクリーンショット 2021-03-23 16.56.00.png" width="300" height="750" alt="">
+    <img src="/assets/スクリーンショット 2021-03-23 16.56.46.png" width="300" height="750" alt="">
+    <img src="/assets/スクリーンショット 2021-03-23 16.57.06.png" width="300" height="750" alt="">
+    </div>
+    
+  <div class="function">
+    <h1 class="explains">このアプリで出来る4つのコト</h1>
+    <div class="todo-explain">
+      <p class="todo-text">①やるコトリスト(todoリスト）の作成</p>
+      <img class="todo-img" src="/assets/スクリーンショット 2021-03-23 16.53.52.png" width="800" height="450" alt="">
+      <div class="add-text">やるコトリストでは、その日行いたいことをリストにまとめることができ、計画的な行動をサポートします。<br>また、やるコトの状態を現在取り組んでいるのか、これからなのか、終わったことなのかで変更できるので、整理がしやすいです！</div>
+    </div>
+
+      <div class="diary-explain">
+        <p class="todo-text">②日記投稿</p>
+        <img class="todo-img" src="/assets/スクリーンショット 2021-03-23 16.56.00.png" width="800" height="450" alt="">
+        <div class="add-text">毎日の出来事を記録して、思う存分思い出を保存できます。<br>日にち検索機能がついているので、すぐに探している思い出を見つけることができます！</div>
+      </div>
+
+        <div class="calender-explain">
+          <p class="todo-text">③予定登録(カレンダー)</p>
+          <img class="todo-img" src="/assets/スクリーンショット 2021-03-23 16.56.46.png" width="800" height="450" alt="">
+          <div class="add-text">カレンダー機能では、登録した予定をわかりやすく見ることができます。<br>予定を選択すると、その予定に登録したメモ書きを確認することができます。</div>
+        </div>
+
+          <div class="weather-explain">
+            <p class="todo-text">④天気予報の確認</p>
+            <img class="todo-img" src="/assets/スクリーンショット 2021-03-23 16.57.06.png" width="800" height="450" alt="">
+            <div class="add-text">あなたの現在の位置情報を元に、1週間分の三時間ごとの天気を確認することができます。<br>※ブラウザでの位置情報取得の許可が必要です</div>
+          </div>
+         </div>
+<footer class="diary-footer">
+  <span class="material-icons">
+    auto_stories</span>
+  <span class="title-name">
+    Your Diary</span>
+</footer>
+</body>
+</html>
